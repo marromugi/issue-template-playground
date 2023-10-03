@@ -1,6 +1,6 @@
-name: Frontend Task
-description: フロントエンドの実装におけるIssueを作成します
-title: "[FE]: "
+name: Design Task
+description: デザインにおけるIssueを作成します
+title: "[UI/UX]: "
 labels: ["frontend"]
 assignees:
   - marromugi
