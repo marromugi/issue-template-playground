@@ -2,6 +2,7 @@ name: Frontend Task
 description: フロントエンドの実装におけるIssueを作成します
 title: "[FE]: "
 labels: ["frontend"]
+projects: ["GreenTea"]
 assignees:
   - marromugi
 body:
