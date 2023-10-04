@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Frontend Task
+    about: フロントエンドの実装におけるIssueを作成します
+    link: https://github.com/marromugi/issue-template-playground/issues/new?projects=GreenTea/1
