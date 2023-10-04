@@ -5,59 +5,47 @@ labels: ["frontend"]
 assignees:
   - marromugi
 body:
-  - type: markdown
+  - type: textarea
+    id: story
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Story
+      description: 作成するタスクの基になるストーリータスクのリンクを記載してください
+      placeholder: "- https://github.com/username/repository/issues/1\n- https://github.com/username/repository/issues/2"
+      render: Text
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: related-issue
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: 関連Issue
+      description: 関連するIssueがあれば設定してください
+      placeholder: "- https://github.com/username/repository/issues/1\n- https://github.com/username/repository/issues/2"
+      render: Text
     validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      required: false
   - type: textarea
-    id: logs
+    id: detail
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: 詳細
+      description: タスクの詳細を記載してください
+      placeholder: フォームのレイアウトを変更するタスクです
+      value: "### タスク概要\n\n### 関連Issue\n"
+    validations:
+      required: false
+  - type: textarea
+    id: test
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: テスト
+      description: 実施すべきテスト項目があれば入力してください
+      placeholder: "- [ ] ここにテスト内容を書く"
+      value: "- [ ] ここにテスト内容を書く\n"
+    validations:
+      required: false
+  - type: input
+    id: figma
+    attributes:
+      label: Figma
+      description: Figma のリンクを設定してください
+      placeholder: "https://www.figma.com/file/xxxxxxxxxxxxxxxxxxxx"
+    validations:
+      required: true
